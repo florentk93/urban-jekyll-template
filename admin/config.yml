@@ -1,6 +1,6 @@
 backend:
-name: github 
-repo: florentk93/urban-jekyll-template
+ name: github 
+ repo: florentk93/urban-jekyll-template
 
 media_folder: "images"
 
