@@ -3,7 +3,6 @@ backend:
  repo: florentk93/urban-jekyll-template
 
 media_folder: "images"
-
 collections:
   - name: "website-settings"
     label: "Website settings"
@@ -18,15 +17,16 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Link", name: "link", widget: "string"}
-
-  - label: "Clients"
-    name: "clients"
+  - name: "clients"
+    label: "Clients"
+    identifier_field: name
     folder: "_clients"
     create: true
     slug: "{{slug}}"
     fields:
       - name: "name"
         label: "Name"
+        identifier_field: name
         widget: "string"
       - name: "subtitle"
         label: "Subtitle"
